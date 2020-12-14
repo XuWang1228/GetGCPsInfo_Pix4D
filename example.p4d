@@ -1,0 +1,1218 @@
+<?xml version="1.0"?>
+<pix4dmapper>
+	<software>
+		<projectVersion>3.0.17</projectVersion>
+		<p4dVersion>9</p4dVersion>
+		<cameraModelVersion>19</cameraModelVersion>
+	</software>
+	<options>
+		<initial>
+			<runStep>true</runStep>
+			<!--    General    -->
+			<!--Keypoints Image Scale-->
+			<keypointsImageScale>Full</keypointsImageScale>
+			<imageScale>1</imageScale>
+			<!--Quality report-->
+			<generateOrthoInReport>true</generateOrthoInReport>
+			<!--    Matching    -->
+			<!--Matching Image Pairs-->
+			<matchStrategy>AutoAerial</matchStrategy>
+			<matchTimeNbNeighbours>0</matchTimeNbNeighbours>
+			<matchUseTriangulation>true</matchUseTriangulation>
+			<matchRelativeDistanceImages>0</matchRelativeDistanceImages>
+			<matchMtpMaxImagePair>5</matchMtpMaxImagePair>
+			<matchImageSimilarityMaxPairs>0</matchImageSimilarityMaxPairs>
+			<matchTimeMultiCamera>0</matchTimeMultiCamera>
+			<!--Matching Strategy-->
+			<geometricallyVerifiedMatching>false</geometricallyVerifiedMatching>
+			<!--    Calibration    -->
+			<!--Targeted number of keypoints-->
+			<keypointSelectionMethod>Automatic</keypointSelectionMethod>
+			<numberOfKeypoints>10000</numberOfKeypoints>
+			<!--Method-->
+			<calibrationMethod>GeolocationAndOrientation</calibrationMethod>
+			<!--Optimizer-->
+			<optimizerType>Classic</optimizerType>
+			<!--Camera optimization-->
+			<internalParamOptimization>All</internalParamOptimization>
+			<externalParamOptimization>All</externalParamOptimization>
+			<!--Rematch-->
+			<rematchStrategy>Auto</rematchStrategy>
+			<rematch>true</rematch>
+			<rematchOverlap>0.3000000119</rematchOverlap>
+			<!--SkySegmentation-->
+			<automaticSkyMasking>true</automaticSkyMasking>
+			<!--Export-->
+			<exportCameraParamsAATBBA>true</exportCameraParamsAATBBA>
+			<exportUndistortedImages>false</exportUndistortedImages>
+			<!--    Miscellaneous options    -->
+			<matchAll>false</matchAll>
+			<targetCameraDist>0</targetCameraDist>
+			<descriptorType>0</descriptorType>
+			<minImageDist>3.6745508692</minImageDist>
+			<rigMatch>true</rigMatch>
+			<saveKMLReport>false</saveKMLReport>
+			<createThumbnails>true</createThumbnails>
+			<threshAdd>20</threshAdd>
+			<threshHom>10</threshHom>
+		</initial>
+		<dense>
+			<runStep>true</runStep>
+			<!--    Point Cloud    -->
+			<!--Densification-->
+			<pclImageDownscaleFactor>1</pclImageDownscaleFactor>
+			<pclImageMultiscale>true</pclImageMultiscale>
+			<pclDensity>Optimal</pclDensity>
+			<pclMinNoMatches>3</pclMinNoMatches>
+			<!--Export-->
+			<pclExportLAS>true</pclExportLAS>
+			<pclExportLAZ>false</pclExportLAZ>
+			<pclExportPLY>false</pclExportPLY>
+			<pclExportXYZ>false</pclExportXYZ>
+			<pclExportXYZDelim>Space</pclExportXYZDelim>
+			<pclExportMergeTiles>false</pclExportMergeTiles>
+			<!--    3D Textured Mesh    -->
+			<!--Generation-->
+			<meshGenerate3dTexturedMesh>true</meshGenerate3dTexturedMesh>
+			<!--Settings-->
+			<meshResolution>Medium</meshResolution>
+			<meshMaxOctreeDepth>12</meshMaxOctreeDepth>
+			<meshTextureSize>8192</meshTextureSize>
+			<meshDecimationCriteria>Quantitative</meshDecimationCriteria>
+			<meshMaxTriangles>1000000</meshMaxTriangles>
+			<meshDecimationStrategy>Sensitive</meshDecimationStrategy>
+			<meshTextureColorBalancing>false</meshTextureColorBalancing>
+			<!--Export-->
+			<meshExportPLY>false</meshExportPLY>
+			<meshExportFBX>true</meshExportFBX>
+			<meshExportDXF>false</meshExportDXF>
+			<meshExportOSGB>false</meshExportOSGB>
+			<meshExportOBJ>true</meshExportOBJ>
+			<meshExportTiledOBJ>false</meshExportTiledOBJ>
+			<meshExportPDF3D>false</meshExportPDF3D>
+			<meshExportPDF3DLogoPath></meshExportPDF3DLogoPath>
+			<!--    Advanced    -->
+			<!--Densification-->
+			<pclWindowSize>7</pclWindowSize>
+			<!--Image groups-->
+			<pclImageGroups>
+				<group name=""/>
+			</pclImageGroups>
+			<meshGeometryImageGroups>
+				<group name=""/>
+			</meshGeometryImageGroups>
+			<meshTextureImageGroups>
+				<group name=""/>
+			</meshTextureImageGroups>
+			<!--Point cloud Filters-->
+			<pclUseProcessingArea>true</pclUseProcessingArea>
+			<pclUseAnnotations>true</pclUseAnnotations>
+			<pclLimitDepthAutomatically>false</pclLimitDepthAutomatically>
+			<!--Point cloud classification-->
+			<pclTerrainClassf>false</pclTerrainClassf>
+			<pclTerrainClassfMinLength>0.1</pclTerrainClassfMinLength>
+			<pclTerrainClassfMaxLength>400</pclTerrainClassfMaxLength>
+			<pclTerrainClassfMinHeight>0.1</pclTerrainClassfMinHeight>
+			<!--Mesh generation-->
+			<meshSampleDensityDivider>1</meshSampleDensityDivider>
+			<!--    ADD-ON options   -->
+			<addOnUseSGM>false</addOnUseSGM>
+			<addOnSGMOptimizeForDSM>true</addOnSGMOptimizeForDSM>
+			<addOnSGMOverlapForward>-1</addOnSGMOverlapForward>
+			<addOnSGMOverlapSideward>-1</addOnSGMOverlapSideward>
+		</dense>
+		<ortho>
+			<runStep>true</runStep>
+			<!--    DSM and Orthomosaic   -->
+			<!--Resolution-->
+			<orthoResolution>-1</orthoResolution>
+			<!--DSM Filters-->
+			<dsmFilterUseNoiseFilter>true</dsmFilterUseNoiseFilter>
+			<dsmFilterUseSmoothing>true</dsmFilterUseSmoothing>
+			<dsmFilterSmoothingType>Sharp</dsmFilterSmoothingType>
+			<!--Raster DSM-->
+			<dsmTIFF>true</dsmTIFF>
+			<dsmMethod>InverseDistanceWeighting</dsmMethod>
+			<dsmTIFFMergeTiles>true</dsmTIFFMergeTiles>
+			<!--Orthomosaic-->
+			<mosaicTIFF>true</mosaicTIFF>
+			<mosaicTIFFMergeTiles>true</mosaicTIFFMergeTiles>
+			<mosaicTIFFNoTransparency>false</mosaicTIFFNoTransparency>
+			<mosaicKML>false</mosaicKML>
+			<!--    Additional outputs    -->
+			<!--Grid DSM-->
+			<gridDsmXYZ>false</gridDsmXYZ>
+			<gridDsmXYZDelim>Space</gridDsmXYZDelim>
+			<gridDsmLAS>false</gridDsmLAS>
+			<gridDsmLAZ>false</gridDsmLAZ>
+			<gridDsmGridSpacing>100</gridDsmGridSpacing>
+			<!--Contour lines-->
+			<contourSHP>false</contourSHP>
+			<contourPDF>false</contourPDF>
+			<contourDXF>false</contourDXF>
+			<contourBase>0</contourBase>
+			<contourElevationInterval>10</contourElevationInterval>
+			<contourResolution>100</contourResolution>
+			<contourMinLineSize>20</contourMinLineSize>
+			<!--    Miscellaneous options    -->
+			<meanResolution>2.6811312209</meanResolution>
+			<mosaicVisib>true</mosaicVisib>
+			<mosaicGainc>true</mosaicGainc>
+			<dsmPNG>false</dsmPNG>
+		</ortho>
+		<index>
+			<!--Resolution-->
+			<indexResolution>-1</indexResolution>
+			<indexDownsamplingMethod>Gauss</indexDownsamplingMethod>
+			<!--Reflectance Map-->
+			<indexReflectance>false</indexReflectance>
+			<indexReflectanceMergeTiles>false</indexReflectanceMergeTiles>
+			<indices>
+				<index name="red" formula="red" enabled="false"/>
+				<index name="green" formula="green" enabled="false"/>
+				<index name="blue" formula="blue" enabled="false"/>
+				<index name="grayscale" formula="0.2126 * red + 0.7152 * green + 0.0722 * blue" enabled="false"/>
+			</indices>
+			<!--Export-->
+			<indexExportPointSHP>false</indexExportPointSHP>
+			<indexExportPointSHPGridSize>200</indexExportPointSHPGridSize>
+			<indexExportPolygonSHP>false</indexExportPolygonSHP>
+			<indexExportPolygonSHPGridSize>400</indexExportPolygonSHPGridSize>
+		</index>
+	</options>
+	<inputs>
+		<cameras>
+			<camera name="FC330_0.0_4000x3000">
+				<imageWidth>4000</imageWidth>
+				<imageHeight>3000</imageHeight>
+				<pixelSize>1.57937</pixelSize>
+				<principalPointXmm>3.15874</principalPointXmm>
+				<principalPointYmm>2.36905</principalPointYmm>
+				<lensType>perspective</lensType>
+				<focalLengthmm>3.72193</focalLengthmm>
+				<distortion>5</distortion>
+				<radialK1>-0.00135883</radialK1>
+				<radialK2>-0.00160514</radialK2>
+				<radialK3>0.000342187</radialK3>
+				<tangentialT1>-0.000909776</tangentialT1>
+				<tangentialT2>-0.00113887</tangentialT2>
+				<cameraModelSource>user</cameraModelSource>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+				<serialNumber></serialNumber>
+				<fixedBands>false</fixedBands>
+				<id>0</id>
+				<radiometricNormalization>none</radiometricNormalization>
+			</camera>
+		</cameras>
+		<coordinateSystems>
+			<southingWesting>true</southingWesting>
+			<output>
+				<WKT>PROJCS[&quot;CH1903 / LV03&quot;,GEOGCS[&quot;CH1903&quot;,DATUM[&quot;CH1903&quot;,SPHEROID[&quot;Bessel 1841&quot;,6377397.155,299.1528128,AUTHORITY[&quot;EPSG&quot;,&quot;7004&quot;]],TOWGS84[674.4,15.1,405.3,0,0,0,0],AUTHORITY[&quot;EPSG&quot;,&quot;6149&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.0174532925199433,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4149&quot;]],PROJECTION[&quot;Hotine_Oblique_Mercator_Azimuth_Center&quot;],PARAMETER[&quot;latitude_of_center&quot;,46.95240555555556],PARAMETER[&quot;longitude_of_center&quot;,7.439583333333333],PARAMETER[&quot;azimuth&quot;,90],PARAMETER[&quot;rectified_grid_angle&quot;,90],PARAMETER[&quot;scale_factor&quot;,1],PARAMETER[&quot;false_easting&quot;,600000],PARAMETER[&quot;false_northing&quot;,200000],UNIT[&quot;metre&quot;,1,AUTHORITY[&quot;EPSG&quot;,&quot;9001&quot;]],AXIS[&quot;Y&quot;,EAST],AXIS[&quot;X&quot;,NORTH],AUTHORITY[&quot;EPSG&quot;,&quot;21781&quot;]]</WKT>
+				<verticalDef model="egm96"/>
+			</output>
+			<gcp>
+				<WKT>PROJCS[&quot;CH1903 / LV03&quot;,GEOGCS[&quot;CH1903&quot;,DATUM[&quot;CH1903&quot;,SPHEROID[&quot;Bessel 1841&quot;,6377397.155,299.1528128,AUTHORITY[&quot;EPSG&quot;,&quot;7004&quot;]],TOWGS84[674.4,15.1,405.3,0,0,0,0],AUTHORITY[&quot;EPSG&quot;,&quot;6149&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.0174532925199433,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4149&quot;]],PROJECTION[&quot;Hotine_Oblique_Mercator_Azimuth_Center&quot;],PARAMETER[&quot;latitude_of_center&quot;,46.95240555555556],PARAMETER[&quot;longitude_of_center&quot;,7.439583333333333],PARAMETER[&quot;azimuth&quot;,90],PARAMETER[&quot;rectified_grid_angle&quot;,90],PARAMETER[&quot;scale_factor&quot;,1],PARAMETER[&quot;false_easting&quot;,600000],PARAMETER[&quot;false_northing&quot;,200000],UNIT[&quot;metre&quot;,1,AUTHORITY[&quot;EPSG&quot;,&quot;9001&quot;]],AXIS[&quot;Y&quot;,EAST],AXIS[&quot;X&quot;,NORTH],AUTHORITY[&quot;EPSG&quot;,&quot;21781&quot;]]</WKT>
+				<verticalDef model="egm96"/>
+			</gcp>
+			<image>
+				<WKT>GEOGCS[&quot;WGS 84&quot;,DATUM[&quot;WGS_1984&quot;,SPHEROID[&quot;WGS 84&quot;,6378137,298.257223563,AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]],TOWGS84[0,0,0,0,0,0,0],AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.01745329251994328,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</WKT>
+				<verticalDef model="constShift" geoidHeight="77"/>
+			</image>
+		</coordinateSystems>
+		<gcps>
+			<GCP label="01_GCP_851" alt="396.462" lat="46.5150631599" lng="6.5600551934" x="532575.071" y="151907.401" z="396.462" tiePoint3D="false" id="0" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9201" alt="401.355" lat="46.5181553914" lng="6.5607774965" x="532634.353" y="152250.507" z="401.355" tiePoint3D="false" id="1" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9202" alt="401.211" lat="46.517492431" lng="6.5605151951" x="532613.399" y="152177.039" z="401.211" tiePoint3D="false" id="2" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9205" alt="400.925" lat="46.5171025456" lng="6.5603803172" x="532602.563" y="152133.816" z="400.925" tiePoint3D="false" id="3" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9206" alt="400.219" lat="46.5164806807" lng="6.5601856688" x="532586.851" y="152064.858" z="400.219" tiePoint3D="false" id="4" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9401" alt="398.209" lat="46.5180202865" lng="6.5622796928" x="532749.456" y="152234.198" z="398.209" tiePoint3D="false" id="5" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9402" alt="396.226" lat="46.5176782623" lng="6.563026678" x="532806.351" y="152195.538" z="396.226" tiePoint3D="false" id="6" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9403" alt="395.885" lat="46.5167839925" lng="6.5629093345" x="532796.235" y="152096.233" z="395.885" tiePoint3D="false" id="7" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9404" alt="394.195" lat="46.5161889652" lng="6.5630348607" x="532805.128" y="152029.983" z="394.195" tiePoint3D="false" id="8" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9406" alt="398.29" lat="46.5170037303" lng="6.5611963312" x="532665.058" y="152122.13" z="398.29" tiePoint3D="false" id="9" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9407" alt="398.895" lat="46.5175153793" lng="6.5609522314" x="532646.964" y="152179.214" z="398.895" tiePoint3D="false" id="10" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9410" alt="399.658" lat="46.5180706769" lng="6.5615629458" x="532694.519" y="152240.415" z="399.658" tiePoint3D="false" id="11" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9412" alt="396.242" lat="46.5176294003" lng="6.561704266" x="532704.814" y="152191.242" z="396.242" tiePoint3D="false" id="12" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9413" alt="397.491" lat="46.5170917436" lng="6.5615749434" x="532694.221" y="152131.588" z="397.491" tiePoint3D="false" id="13" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9414" alt="397.006" lat="46.5169620105" lng="6.5617938283" x="532710.856" y="152116.979" z="397.006" tiePoint3D="false" id="14" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9415" alt="396.204" lat="46.5176831583" lng="6.5622032789" x="532743.173" y="152196.789" z="396.204" tiePoint3D="false" id="15" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9417" alt="396.311" lat="46.5171141629" lng="6.5625227857" x="532766.983" y="152133.266" z="396.311" tiePoint3D="false" id="16" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9420" alt="396.473" lat="46.5167265378" lng="6.5624449489" x="532760.528" y="152090.245" z="396.473" tiePoint3D="false" id="17" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9421" alt="396.459" lat="46.5166503919" lng="6.562244325" x="532745.0379999999" y="152081.953" z="396.459" tiePoint3D="false" id="18" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9422" alt="397.042" lat="46.516510953" lng="6.5615251634" x="532689.678" y="152067.071" z="397.042" tiePoint3D="false" id="19" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9423" alt="397.75" lat="46.516510822" lng="6.5611243176" x="532658.9179999999" y="152067.401" z="397.75" tiePoint3D="false" id="20" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9425" alt="394.619" lat="46.5157766807" lng="6.5621472526" x="532736.502" y="151984.916" z="394.619" tiePoint3D="false" id="21" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9426" alt="394.449" lat="46.5159026298" lng="6.5624212792" x="532757.687" y="151998.681" z="394.449" tiePoint3D="false" id="22" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9430" alt="399.434" lat="46.5164355615" lng="6.5604617955" x="532607.9840000001" y="152059.605" z="399.434" tiePoint3D="false" id="23" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9431" alt="398.409" lat="46.5171306456" lng="6.5611506415" x="532661.71" y="152136.277" z="398.409" tiePoint3D="false" id="24" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="01_GCP_9450" alt="399.569" lat="46.5164154746" lng="6.5603597337" x="532600.127" y="152057.46" z="399.569" tiePoint3D="false" id="25" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="02_GCP_9001" alt="413.537" lat="46.5172646409" lng="6.5619612322" x="532724.0784313011" y="152150.474745279" z="413.537" tiePoint3D="false" id="26" accuracyXY="0.005" accuracyZ="0.012" type="3DGCP"/>
+			<GCP label="02_GCP_9002" alt="413.529" lat="46.5173367905" lng="6.5618683708" x="532717.042387079" y="152158.574556134" z="413.529" tiePoint3D="false" id="27" accuracyXY="0.005" accuracyZ="0.012" type="3DGCP"/>
+			<GCP label="02_GCP_9003" alt="413.543" lat="46.5174107314" lng="6.5619646075" x="532724.519225957" y="152166.711041825" z="413.543" tiePoint3D="false" id="28" accuracyXY="0.005" accuracyZ="0.012" type="3DGCP"/>
+			<GCP label="02_GCP_9005" alt="396.203" lat="46.517494373" lng="6.563540071" x="532845.518156355" y="152174.656798079" z="396.203" tiePoint3D="false" id="29" accuracyXY="0.002" accuracyZ="0.003" type="3DGCP"/>
+			<GCP label="02_GCP_9006" alt="396.191" lat="46.5179999515" lng="6.5629785383" x="532803.056792538" y="152231.337789244" z="396.191" tiePoint3D="false" id="30" accuracyXY="0.002" accuracyZ="0.003" type="3DGCP"/>
+			<GCP label="02_GCP_9008" alt="395.883" lat="46.5167650264" lng="6.5629007746" x="532795.554558111" y="152094.132107783" z="395.883" tiePoint3D="false" id="31" accuracyXY="0.001" accuracyZ="0.003" type="3DGCP"/>
+			<GCP label="02_GCP_9009" alt="396.619" lat="46.5166250721" lng="6.562039063" x="532729.255274237" y="152079.314775828" z="396.619" tiePoint3D="false" id="32" accuracyXY="0.002" accuracyZ="0.003" type="3DGCP"/>
+			<GCP label="02_GCP_9010" alt="398.233" lat="46.51671828" lng="6.5610804084" x="532655.806928686" y="152090.499455966" z="398.233" tiePoint3D="false" id="33" accuracyXY="0.003" accuracyZ="0.004" type="3DGCP"/>
+			<GCP label="02_GCP_9011" alt="397.652" lat="46.5171213265" lng="6.5615378701" x="532691.4129518759" y="152134.908250306" z="397.652" tiePoint3D="false" id="34" accuracyXY="0.002" accuracyZ="0.003" type="3DGCP"/>
+			<GCP label="02_GCP_9012" alt="399.098" lat="46.5177165522" lng="6.5611321199" x="532661.0184624241" y="152201.421381907" z="399.098" tiePoint3D="false" id="35" accuracyXY="0.003" accuracyZ="0.004" type="3DGCP"/>
+			<GCP label="02_GCP_9013" alt="396.209" lat="46.5173668531" lng="6.5625491449" x="532769.319933354" y="152161.332031636" z="396.209" tiePoint3D="false" id="36" accuracyXY="0.001" accuracyZ="0.004" type="3DGCP"/>
+			<GCP label="02_GCP_9021" alt="396.107" lat="46.5176294733" lng="6.5620747292" x="532733.241854921" y="152190.931858877" z="396.107" tiePoint3D="false" id="37" accuracyXY="0.002" accuracyZ="0.002" type="3DGCP"/>
+			<GCP label="03_GCP_roof_E_point1" alt="413.998" lat="46.5170163225" lng="6.562240715" x="532745.216" y="152122.632" z="413.998" tiePoint3D="false" id="38" accuracyXY="0.02" accuracyZ="0.04" type="3DGCP"/>
+			<GCP label="03_GCP_roof_E_point2" alt="413.977" lat="46.516881656" lng="6.5622787739" x="532747.969" y="152107.63" z="413.977" tiePoint3D="false" id="39" accuracyXY="0.02" accuracyZ="0.04" type="3DGCP"/>
+			<GCP label="03_GCP_roof_E_point3" alt="413.987" lat="46.5169491117" lng="6.562362946" x="532754.512" y="152115.056" z="413.987" tiePoint3D="false" id="40" accuracyXY="0.02" accuracyZ="0.04" type="3DGCP"/>
+			<GCP label="03_GCP_roof_E_point4" alt="414.255" lat="46.5169798806" lng="6.5623096173" x="532750.458" y="152118.522" z="414.255" tiePoint3D="false" id="41" accuracyXY="0.02" accuracyZ="0.04" type="3DGCP"/>
+			<GCP label="03_GCP_roof_J_point1" alt="413.762" lat="46.5164106666" lng="6.5619324353" x="532720.806" y="152055.573" z="413.762" tiePoint3D="false" id="42" accuracyXY="0.02" accuracyZ="0.04" type="3DGCP"/>
+			<GCP label="03_GCP_roof_J_point2" alt="413.808" lat="46.5164080466" lng="6.5619251672" x="532720.245" y="152055.288" z="413.808" tiePoint3D="false" id="43" accuracyXY="0.02" accuracyZ="0.04" type="3DGCP"/>
+			<GCP label="03_GCP_roof_J_point3" alt="413.82" lat="46.5163997444" lng="6.5620894849" x="532732.844" y="152054.224" z="413.82" tiePoint3D="false" id="44" accuracyXY="0.02" accuracyZ="0.04" type="3DGCP"/>
+			<GCP label="03_GCP_roof_J_point4" alt="413.809" lat="46.5163260885" lng="6.5620260563" x="532727.885" y="152046.091" z="413.809" tiePoint3D="false" id="45" accuracyXY="0.02" accuracyZ="0.04" type="3DGCP"/>
+		</gcps>
+		<images>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0040.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:00</time>
+				<gps alt="433.51599121089998334" lat="46.51786252779999842" lng="6.56094083330000011"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="562.3252845272" y="2047.5031876083" id="1" scale="1.1840505048"/>
+				<imageGCP x="3552.6502391909" y="2449.5825864798" id="2" scale="1.1289478601"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0041.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:04</time>
+				<gps alt="432.91598510739999028" lat="46.5178596388999992" lng="6.56116108330000003"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.5" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="605.3857891444" y="2721.7707044966" id="1" scale="1.0764095498"/>
+				<imageGCP x="798.9045247675" y="309.1503622036" id="11" scale="1"/>
+				<imageGCP x="2424.7316439265" y="1454.5339108135" id="35" scale="1.1289478601"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0042.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:07</time>
+				<gps alt="433.11599731450002082" lat="46.51786111109999666" lng="6.56129119439999986"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.5" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="870.1999541463" y="724.7418125563" id="11" scale="1"/>
+				<imageGCP x="2449.8113020145" y="1868.0530972629" id="35" scale="1.1840505048"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0043.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:10</time>
+				<gps alt="433.31600952150000694" lat="46.51786072219999824" lng="6.56148272220000006"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.5" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="923.8237337829" y="1243.9329966476" id="11" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0044.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:13</time>
+				<gps alt="433.41598510739999028" lat="46.51786033329999981" lng="6.56167272219999997"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.4000015259" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="945.8307620817" y="1777.0278811372" id="11" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0045.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:15</time>
+				<gps alt="433.31600952150000694" lat="46.51786011109999919" lng="6.56186266669999974"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.4000015259" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="953.4271813579" y="2282.9157934745" id="11" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0046.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:18</time>
+				<gps alt="433.21600341800001388" lat="46.51785991669999731" lng="6.56205408329999962"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.3000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="949.5849797787" y="2805.2003367195" id="11" scale="1"/>
+				<imageGCP x="2743.5474553734" y="1303.4541024235" id="37" scale="1.0263162365"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0047.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:21</time>
+				<gps alt="433.21600341800001388" lat="46.51785986109999982" lng="6.56224513889999983"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2537.5661063349" y="1466.5294845118" id="15" scale="1"/>
+				<imageGCP x="3776.6992716189" y="533.6435426598" id="36" scale="1"/>
+				<imageGCP x="2742.5036435981" y="1816.7245098348" id="37" scale="1.1289478601"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0048.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:24</time>
+				<gps alt="433.21600341800001388" lat="46.51786011109999919" lng="6.56243733330000012"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2528.1935028173" y="1979.1308824398" id="15" scale="1"/>
+				<imageGCP x="3780.4878886397" y="1058.6718194958" id="36" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0049.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:27</time>
+				<gps alt="433.31600952150000694" lat="46.51786024999999825" lng="6.56262963889999984"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2505.0778878549" y="2498.0050235959" id="15" scale="1"/>
+				<imageGCP x="1307.6236530552" y="322.2796656969" id="30" scale="1.2418426461"/>
+				<imageGCP x="3762.7685703608" y="1589.6577323545" id="36" scale="1.4327011108"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0050.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:30</time>
+				<gps alt="433.31600952150000694" lat="46.51786072219999824" lng="6.56275702780000003"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1299.9193203363" y="825.8030401217" id="30" scale="1.1840505048"/>
+				<imageGCP x="3745.3240234559" y="2104.6972317679" id="36" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0051.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:33</time>
+				<gps alt="433.31600952150000694" lat="46.51786072219999824" lng="6.56294841670000029"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1282.2720014735" y="1334.6813667867" id="30" scale="1.2418426461"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0052.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:36</time>
+				<gps alt="433.21600341800001388" lat="46.51786047219999887" lng="6.56314047219999974"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3357.46358005" y="415.8353709971" id="29" scale="1.1289478601"/>
+				<imageGCP x="1255.0187172084" y="1843.9809961461" id="30" scale="1.1289478601"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0053.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:39</time>
+				<gps alt="433.31600952150000694" lat="46.51786066670000253" lng="6.56333358330000038"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3332.0345557452" y="948.7551063435" id="29" scale="1"/>
+				<imageGCP x="1221.2550008783" y="2365.4008775544" id="30" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0054.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:48</time>
+				<gps alt="434.01599121089998334" lat="46.51758905559999846" lng="6.56338547220000024"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.9000015259" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2282.5876713815" y="979.4130937575" id="29" scale="1.5026296018"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0055.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:53</time>
+				<gps alt="433.11599731450002082" lat="46.51759863889999735" lng="6.5631959166999998"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2394.4481797898" y="358.887072717" id="29" scale="1.0263162365"/>
+				<imageGCP x="130.6407791843" y="1706.6325826166" id="30" scale="1.2418426461"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0056.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:55</time>
+				<gps alt="433.21600341800001388" lat="46.51759963890000193" lng="6.5630021944000001"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="194.5061583313" y="1266.5366937651" id="30" scale="2"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0057.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:02:58</time>
+				<gps alt="433.31600952150000694" lat="46.51759944439999828" lng="6.56281072220000006"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2700.4480673382" y="2233.8100816004" id="36" scale="1.1840505048"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0058.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:01</time>
+				<gps alt="433.41598510739999028" lat="46.51759952780000162" lng="6.56262036109999958"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1369.1502466879" y="2546.3733731301" id="15" scale="1"/>
+				<imageGCP x="2755.1285557235" y="1721.8970866866" id="36" scale="1.2418426461"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0059.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:04</time>
+				<gps alt="433.31600952150000694" lat="46.51759922219999766" lng="6.56249205559999993"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1428.576057148" y="2025.0791932715" id="15" scale="1"/>
+				<imageGCP x="2812.0990774398" y="1213.4059799903" id="36" scale="1.1840505048"/>
+				<imageGCP x="1602.8174318954" y="2408.7636079792" id="37" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0060.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:07</time>
+				<gps alt="433.41598510739999028" lat="46.51759925000000351" lng="6.56230052779999973"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1490.4320812761" y="1502.417325866" id="15" scale="1"/>
+				<imageGCP x="3525.7220599299" y="2712.8041367139" id="26" scale="1.5759712219"/>
+				<imageGCP x="2738.612101576" y="2616.9146758825" id="28" scale="1.2418426461"/>
+				<imageGCP x="2870.8082404269" y="702.290278372" id="36" scale="1.2418426461"/>
+				<imageGCP x="1664.5904454645" y="1886.138792503" id="37" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0061.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:10</time>
+				<gps alt="433.41598510739999028" lat="46.5175991389000032" lng="6.56210961110000035"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1555.9685232972" y="972.2416985502" id="15" scale="1"/>
+				<imageGCP x="3602.0102807472" y="1997.3655520058" id="26" scale="2"/>
+				<imageGCP x="3174.9110498083" y="2302.1428320726" id="27" scale="1.3024555553"/>
+				<imageGCP x="2818.2670355505" y="1895.1413116464" id="28" scale="1.0764095498"/>
+				<imageGCP x="2928.573539202" y="186.6751832242" id="36" scale="1.2418426461"/>
+				<imageGCP x="1727.3223414092" y="1355.9955881695" id="37" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0062.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:13</time>
+				<gps alt="433.41598510739999028" lat="46.51759905560000163" lng="6.5619173610999999"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1616.551129653" y="481.8861072632" id="15" scale="1"/>
+				<imageGCP x="3253.4826131442" y="1641.4173600066" id="27" scale="1.3660269107"/>
+				<imageGCP x="2898.2872484192" y="1231.9861152476" id="28" scale="1.1840505048"/>
+				<imageGCP x="1788.6092533254" y="866.9282934847" id="37" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0063.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:16</time>
+				<gps alt="433.41598510739999028" lat="46.51759944439999828" lng="6.56172663889999974"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3338.6893740754" y="929.0934327622" id="27" scale="1"/>
+				<imageGCP x="2984.1857240757" y="520.4079441749" id="28" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0064.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:18</time>
+				<gps alt="433.41598510739999028" lat="46.51759944439999828" lng="6.56153372220000008"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3649.2612761278" y="2682.9457858116" id="24" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0065.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:22</time>
+				<gps alt="433.31600952150000694" lat="46.51759933329999797" lng="6.56127952780000001"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3725.7645506398" y="2031.6208054356" id="24" scale="1"/>
+				<imageGCP x="1290.4172369406" y="1795.0479964437" id="35" scale="1.1840505048"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0066.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:24</time>
+				<gps alt="433.31600952150000694" lat="46.51759941670000131" lng="6.56115138889999994"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3771.2661782608" y="1604.7854854077" id="24" scale="1"/>
+				<imageGCP x="1350.7600278278" y="1352.5280638329" id="35" scale="1.3024555553"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0067.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:27</time>
+				<gps alt="433.51599121089998334" lat="46.51759919439999891" lng="6.56096430559999977"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.8000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2145.6636153479" y="2779.0164714418" id="2" scale="1.0263162365"/>
+				<imageGCP x="3832.2135547055" y="1091.0943445816" id="24" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0068.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:37</time>
+				<gps alt="434.21600341800001388" lat="46.51732591670000261" lng="6.56095569439999959"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="990.8931268588" y="2592.6172863667" id="2" scale="1.0764095498"/>
+				<imageGCP x="3277.6908969074" y="807.4262022897" id="9" scale="1"/>
+				<imageGCP x="2744.7390771122" y="876.0380081984" id="24" scale="1.0263162365"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0069.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:40</time>
+				<gps alt="432.91598510739999028" lat="46.51733677779999709" lng="6.56114072220000022"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.5" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3280.5159508496" y="1351.932502539" id="9" scale="1"/>
+				<imageGCP x="2740.2482507357" y="1429.2832946544" id="24" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0070.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:43</time>
+				<gps alt="433.31600952150000694" lat="46.51733686109999866" lng="6.5613357778000001"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.4000015259" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3210.6173866863" y="1862.9395573724" id="9" scale="1"/>
+				<imageGCP x="2677.390810477" y="1942.4829567751" id="24" scale="1"/>
+				<imageGCP x="2822.8327981853" y="839.0422195346" id="34" scale="1.0764095498"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0071.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:46</time>
+				<gps alt="433.41598510739999028" lat="46.51733663889999804" lng="6.56152605559999991"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.4000015259" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3157.0346653994" y="2380.8898515498" id="9" scale="1"/>
+				<imageGCP x="2625.0746077513" y="2464.3439616076" id="24" scale="1"/>
+				<imageGCP x="2768.8137086486" y="1358.7102807384" id="34" scale="1.0263162365"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0072.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:49</time>
+				<gps alt="433.31600952150000694" lat="46.5173367221999996" lng="6.56171666669999976"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.3000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3100.3952070011" y="2899.890118819" id="9" scale="1"/>
+				<imageGCP x="2569.7793430744" y="2984.5068105959" id="24" scale="1"/>
+				<imageGCP x="2364.485975822" y="359.7227711531" id="26" scale="1.3660269107"/>
+				<imageGCP x="1928.7031037853" y="674.7735015893" id="27" scale="1.1289478601"/>
+				<imageGCP x="1553.1727589472" y="260.4120949562" id="28" scale="1.1840505048"/>
+				<imageGCP x="2714.935712119" y="1882.4660545221" id="34" scale="1.0764095498"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0073.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:52</time>
+				<gps alt="433.11599731450002082" lat="46.51733658330000054" lng="6.5618443056000002"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.3000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="562.7032050417" y="303.8139889912" id="15" scale="1"/>
+				<imageGCP x="2290.5337161257" y="1080.1013890177" id="26" scale="1.5759712219"/>
+				<imageGCP x="1861.4689995007" y="1390.4525893879" id="27" scale="1.5759712219"/>
+				<imageGCP x="1491.8353350083" y="985.5105315767" id="28" scale="1.1840505048"/>
+				<imageGCP x="2655.2145598139" y="2400.0642083851" id="34" scale="1"/>
+				<imageGCP x="3765.2687126987" y="148.7191372638" id="38" scale="1.1289478601"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0074.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:55</time>
+				<gps alt="433.51599121089998334" lat="46.51733633330000117" lng="6.56203636109999966"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.3000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="503.8355386404" y="811.7557119271" id="15" scale="1"/>
+				<imageGCP x="2222.6034344517" y="1776.0421820049" id="26" scale="2"/>
+				<imageGCP x="1789.8250297764" y="2088.9597736485" id="27" scale="1.3660269107"/>
+				<imageGCP x="1417.0498927547" y="1683.4732789744" id="28" scale="1.0263162365"/>
+				<imageGCP x="3713.840988574" y="843.8715800121" id="38" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0075.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:03:58</time>
+				<gps alt="433.31600952150000694" lat="46.51733633330000117" lng="6.56222700000000003"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="450.0230708697" y="1363.9515827714" id="15" scale="1"/>
+				<imageGCP x="2150.0481541745" y="2524.1979782876" id="26" scale="1.2418426461"/>
+				<imageGCP x="1716.2499731862" y="2837.260730259" id="27" scale="1.4327011108"/>
+				<imageGCP x="1343.3058266459" y="2434.3977799011" id="28" scale="1.3024555553"/>
+				<imageGCP x="1840.4622262289" y="518.9031494758" id="36" scale="1"/>
+				<imageGCP x="3644.0764601192" y="1598.0720793346" id="38" scale="1.3024555553"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0076.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:01</time>
+				<gps alt="433.21600341800001388" lat="46.51733652779999773" lng="6.56241922219999996"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1792.3297157869" y="1019.0339794291" id="36" scale="1"/>
+				<imageGCP x="3562.3999507857" y="2268.8548750226" id="38" scale="1.1289478601"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0077.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:04</time>
+				<gps alt="433.31600952150000694" lat="46.51733636109999992" lng="6.56260986110000033"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="359.359456389" y="2402.1835936998" id="15" scale="1"/>
+				<imageGCP x="1736.3810923912" y="1565.4370947837" id="36" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0078.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:06</time>
+				<gps alt="433.31600952150000694" lat="46.51733663889999804" lng="6.56280216670000005"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="314.6514207838" y="2887.4094324581" id="15" scale="1"/>
+				<imageGCP x="1687.2801031614" y="2057.0933865826" id="36" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0079.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:09</time>
+				<gps alt="433.31600952150000694" lat="46.51733663889999804" lng="6.56299358329999993"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0080.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:12</time>
+				<gps alt="433.31600952150000694" lat="46.51733644440000148" lng="6.56318550000000034"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1344.6530742419" y="264.2634581744" id="29" scale="1.2418426461"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0081.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:16</time>
+				<gps alt="433.31600952150000694" lat="46.51733661109999929" lng="6.5633743888999998"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.0999984741" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1284.1788817672" y="869.7891341693" id="29" scale="1.3024555553"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0082.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:25</time>
+				<gps alt="433.91598510739999028" lat="46.51706547220000232" lng="6.56338563889999982"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="173.8782108497" y="716.1766840977" id="29" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0083.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:29</time>
+				<gps alt="433.01599121089998334" lat="46.51707355559999968" lng="6.5632187778000004"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.5999984741" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="246.8173292883" y="154.2909125278" id="29" scale="1"/>
+				<imageGCP x="3020.7333444818" y="2334.6185899971" id="31" scale="2"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0084.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:32</time>
+				<gps alt="433.21600341800001388" lat="46.5170758056000011" lng="6.56302352780000042"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.5999984741" pitch="0" roll="0" perpCamera="true"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0085.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:35</time>
+				<gps alt="433.41598510739999028" lat="46.51707536109999808" lng="6.56283180560000012"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.5999984741" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="566.1421336738" y="1980.2475268413" id="36" scale="1.3660269107"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0086.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:37</time>
+				<gps alt="433.31600952150000694" lat="46.51707502779999714" lng="6.56264241670000015"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="637.4829410274" y="1457.3495660655" id="36" scale="1.0764095498"/>
+				<imageGCP x="1984.2047055492" y="2905.5039369726" id="38" scale="1.2418426461"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0087.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:41</time>
+				<gps alt="433.41598510739999028" lat="46.51707530560000237" lng="6.56245063889999969"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3523.2093267368" y="2683.7968335635" id="32" scale="1"/>
+				<imageGCP x="704.6296370731" y="896.6198925093" id="36" scale="1.2418426461"/>
+				<imageGCP x="2074.7174146372" y="2132.7097409137" id="38" scale="1.0263162365"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0088.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:43</time>
+				<gps alt="433.21600341800001388" lat="46.5170749999999984" lng="6.56225930559999959"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="636.6899765599" y="2341.1345679526" id="26" scale="2"/>
+				<imageGCP x="3572.8418766214" y="2184.7108265934" id="32" scale="1"/>
+				<imageGCP x="771.3619479206" y="397.149102759" id="36" scale="1.0764095498"/>
+				<imageGCP x="2155.3697977523" y="1441.2246878806" id="38" scale="1.3024555553"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0089.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:46</time>
+				<gps alt="433.21600341800001388" lat="46.51707480559999652" lng="6.56206661109999967"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.5999984741" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3628.1161144835" y="1680.1147658214" id="32" scale="1"/>
+				<imageGCP x="2239.6578722584" y="744.3133208726" id="38" scale="1.0764095498"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0090.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:49</time>
+				<gps alt="433.51599121089998334" lat="46.5170743611000006" lng="6.56187461110000037"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="375.4396543219" y="1226.157391242" id="27" scale="1.1289478601"/>
+				<imageGCP x="3680.7398937146" y="1167.9869896813" id="32" scale="1"/>
+				<imageGCP x="1534.5784711535" y="2325.7838204101" id="34" scale="1"/>
+				<imageGCP x="2322.2537096703" y="46.3611764586" id="38" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0091.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:52</time>
+				<gps alt="433.31600952150000694" lat="46.5170744166999981" lng="6.56168294440000022"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1965.3757219195" y="2854.606582502" id="9" scale="1"/>
+				<imageGCP x="1415.8882773098" y="2931.1173597981" id="24" scale="1"/>
+				<imageGCP x="90.0497617296" y="101.6149677631" id="28" scale="1.0263162365"/>
+				<imageGCP x="1601.4640986636" y="1806.4141354538" id="34" scale="1.0263162365"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0092.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:55</time>
+				<gps alt="433.31600952150000694" lat="46.51707455559999715" lng="6.56149227780000022"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2033.4018616322" y="2323.5273715322" id="9" scale="1"/>
+				<imageGCP x="1483.1976714208" y="2395.5638125889" id="24" scale="1"/>
+				<imageGCP x="1668.1220395509" y="1277.7023175389" id="34" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0093.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:04:58</time>
+				<gps alt="433.31600952150000694" lat="46.51707461109999997" lng="6.56136466670000029"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2099.5072518903" y="1796.4976128664" id="9" scale="1"/>
+				<imageGCP x="1550.1578597638" y="1864.5832808201" id="24" scale="1"/>
+				<imageGCP x="3236.8019854958" y="2271.9762805807" id="33" scale="1.5759712219"/>
+				<imageGCP x="1735.4533358975" y="756.1528619158" id="34" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0094.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:01</time>
+				<gps alt="433.21600341800001388" lat="46.51707455559999715" lng="6.56117244440000036"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2166.6506426304" y="1275.9474716944" id="9" scale="1.1840505048"/>
+				<imageGCP x="1618.792689259" y="1340.2157179068" id="24" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0095.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:04</time>
+				<gps alt="433.31600952150000694" lat="46.5170743611000006" lng="6.56098083330000037"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2234.9893700204" y="733.3422742094" id="9" scale="1.0764095498"/>
+				<imageGCP x="1688.8105662197" y="793.2768369683" id="24" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0096.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:13</time>
+				<gps alt="433.71600341800001388" lat="46.51680474999999859" lng="6.56095697219999963"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.3000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="326.9573295565" y="2975.3479213801" id="3" scale="1.1289478601"/>
+				<imageGCP x="1090.3220960969" y="561.8853828158" id="9" scale="1"/>
+				<imageGCP x="530.0640864706" y="629.4415014246" id="24" scale="1"/>
+				<imageGCP x="2258.4795210344" y="1041.6016830663" id="33" scale="1.5759712219"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0097.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:17</time>
+				<gps alt="433.11599731450002082" lat="46.51681252779999909" lng="6.56111472220000014"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.5" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1066.5056834758" y="1141.5727349684" id="9" scale="1"/>
+				<imageGCP x="505.0577181789" y="1216.7850658602" id="24" scale="1"/>
+				<imageGCP x="2243.424532094" y="1614.9615472914" id="33" scale="1.7335683441"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0098.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:20</time>
+				<gps alt="433.41598510739999028" lat="46.51681191670000004" lng="6.56131219440000013"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.4000015259" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1017.4994817723" y="1669.8734111239" id="9" scale="1"/>
+				<imageGCP x="460.3565364224" y="1746.8077481312" id="24" scale="1"/>
+				<imageGCP x="2184.8501831062" y="2131.302018577" id="33" scale="1.1289478601"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0099.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:23</time>
+				<gps alt="433.41598510739999028" lat="46.516811944399997" lng="6.56150386110000028"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.4000015259" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="966.011818435" y="2206.2186545273" id="9" scale="1.0263162365"/>
+				<imageGCP x="411.7252944835" y="2284.9979102039" id="24" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0100.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:26</time>
+				<gps alt="433.31600952150000694" lat="46.51681208330000317" lng="6.56169516669999986"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.3000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="917.8708921308" y="2754.9150994479" id="9" scale="1"/>
+				<imageGCP x="2743.0140585965" y="493.6193808688" id="32" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0101.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:28</time>
+				<gps alt="433.41598510739999028" lat="46.51681202780000035" lng="6.56188547220000018"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.3000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2686.53779502" y="994.2375914057" id="32" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0102.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:31</time>
+				<gps alt="433.41598510739999028" lat="46.5168120555999991" lng="6.56207600000000024"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.3000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2631.6280320563" y="1516.3257116232" id="32" scale="1.0764095498"/>
+				<imageGCP x="765.8986807492" y="554.1020282644" id="38" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0103.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:34</time>
+				<gps alt="433.41598510739999028" lat="46.51681169439999763" lng="6.5622682499999998"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.3000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2580.3174946449" y="2024.7097533514" id="32" scale="1"/>
+				<imageGCP x="700.2818172485" y="1269.534589059" id="38" scale="1.1840505048"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0104.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:37</time>
+				<gps alt="433.41598510739999028" lat="46.51681177780000098" lng="6.56239674999999956"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.3000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2530.135397907" y="2538.6236941152" id="32" scale="1"/>
+				<imageGCP x="635.6967862593" y="1993.9007036957" id="38" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0105.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:40</time>
+				<gps alt="433.41598510739999028" lat="46.51681211110000191" lng="6.56258747219999972"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.3000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2150.5956998371" y="581.4810917506" id="31" scale="2"/>
+				<imageGCP x="571.4691979181" y="2717.9754133801" id="38" scale="1.3024555553"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0106.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:43</time>
+				<gps alt="433.41598510739999028" lat="46.51681202780000035" lng="6.56277925000000018"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2097.8944249201" y="1123.8015455923" id="31" scale="1.5026296018"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0107.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:46</time>
+				<gps alt="433.41598510739999028" lat="46.51681175000000223" lng="6.56297077780000038"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2051.006787516" y="1625.1786457911" id="31" scale="1.7335683441"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0108.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:49</time>
+				<gps alt="433.41598510739999028" lat="46.51681191670000004" lng="6.5631628056000002"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="2000.4522649559" y="2156.6095798639" id="31" scale="1.5759712219"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0109.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:05:51</time>
+				<gps alt="433.41598510739999028" lat="46.51681211110000191" lng="6.56335422220000009"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="90.1999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1952.3747695315" y="2669.6040557341" id="31" scale="1.5026296018"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0110.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:01</time>
+				<gps alt="434.21600341800001388" lat="46.51654227779999928" lng="6.56338502779999988"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.8000030518" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3162.1140025133" y="2465.4839582965" id="8" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0111.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:05</time>
+				<gps alt="432.91598510739999028" lat="46.51654908329999927" lng="6.56323827780000002"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.5999984741" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3249.0054245594" y="1967.7298900938" id="8" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0112.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:08</time>
+				<gps alt="433.21600341800001388" lat="46.51655158330000006" lng="6.56304233330000031"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.5999984741" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3280.7708336875" y="1449.2772673292" id="8" scale="1.0764095498"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0113.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:11</time>
+				<gps alt="433.41598510739999028" lat="46.51655113889999882" lng="6.56284969439999966"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.5999984741" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3316.7427295735" y="956.0136452575" id="8" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0114.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:14</time>
+				<gps alt="433.41598510739999028" lat="46.5165506944000029" lng="6.56265952780000017"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.5999984741" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="3363.0063431209" y="462.1788765348" id="8" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0115.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:17</time>
+				<gps alt="433.31600952150000694" lat="46.51655038890000071" lng="6.5624667778000001"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.5999984741" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1440.1517955423" y="2494.0548252073" id="32" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0116.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:20</time>
+				<gps alt="433.31600952150000694" lat="46.5165502778000004" lng="6.56227705560000008"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.5999984741" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1497.6138951539" y="1948.9962244116" id="32" scale="1"/>
+				<imageGCP x="2506.1008155765" y="2670.0559799432" id="42" scale="1.0263162365"/>
+				<imageGCP x="2627.5861029392" y="2074.7760045513" id="44" scale="1.0764095498"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0117.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:22</time>
+				<gps alt="433.31600952150000694" lat="46.51655025000000165" lng="6.56208497220000009"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1550.893940434" y="1447.9399171506" id="32" scale="1.2418426461"/>
+				<imageGCP x="2574.0400309792" y="1987.8512787196" id="42" scale="1.0764095498"/>
+				<imageGCP x="2695.4266922406" y="1395.2171967909" id="44" scale="1.1840505048"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0118.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:25</time>
+				<gps alt="433.31600952150000694" lat="46.51654991670000072" lng="6.56189369440000014"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1605.0649507274" y="930.7298570789" id="32" scale="1.0263162365"/>
+				<imageGCP x="2647.8338946173" y="1283.8466635829" id="42" scale="1.0263162365"/>
+				<imageGCP x="2767.9249523489" y="692.138819307" id="44" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0119.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:28</time>
+				<gps alt="433.31600952150000694" lat="46.51654988890000197" lng="6.56170094440000007"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1660.107902149" y="414.3173336873" id="32" scale="1"/>
+				<imageGCP x="2719.9357338901" y="584.1776762714" id="42" scale="1"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0120.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:31</time>
+				<gps alt="433.31600952150000694" lat="46.51654977780000166" lng="6.56151000000000018"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0121.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:34</time>
+				<gps alt="433.31600952150000694" lat="46.51654986110000323" lng="6.56131750000000036"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+			</image>
+			<image path="//synology1/data/newbenchmark/00014/images/DJI_0122.jpg" group="group1" enabled="true">
+				<camera name="FC330_0.0_4000x3000" id="0"/>
+				<time>2016:03:18 15:06:37</time>
+				<gps alt="433.11599731450002082" lat="46.51654988890000197" lng="6.56112702779999957"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="89.6999969482" pitch="0" roll="0" perpCamera="true"/>
+				<imageGCP x="1149.2869220005" y="1488.5834651701" id="33" scale="1.3024555553"/>
+			</image>
+		</images>
+		<processingArea>
+			<geoCoord2D x="532865.512872273" y="152035.399177744"/>
+			<geoCoord2D x="532612.867071408" y="152033.312040186"/>
+			<geoCoord2D x="532611.60359428" y="152260.80602189"/>
+			<geoCoord2D x="532870.766476715" y="152248.686703705"/>
+			<z zMin="379" zMax="500"/>
+		</processingArea>
+		<indexRegions/>
+		<indexClasses/>
+		<objects>
+			<object name="Clipping Box" type="CLIPPING_BOX" centerX="313003" centerY="5154403" centerZ="433" sizeX="5" sizeY="5" sizeZ="5" rotationZ="0" fresh="true"/>
+			<object name="Unclassified" type="POINT_GROUP" groupId="0" classificationId="0" locked="false"/>
+			<object name="Deleted" type="POINT_GROUP" groupId="1" classificationId="0" locked="false"/>
+		</objects>
+	</inputs>
+</pix4dmapper>
